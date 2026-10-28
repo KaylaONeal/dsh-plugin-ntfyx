@@ -1,0 +1,44 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Ntfyx plugins for DSH",
+    "zh": "Ntfyx 的 DSH 插件"
+  },
+  "description": {
+    "en": "Ntfyx-maintained community plugins. Git sources are pinned to verified commits.",
+    "zh": "Ntfyx 维护的社区插件，Git 安装源固定到已核验提交。"
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-ntfyx",
+      "title": {
+        "en": "Ntfyx phone replies",
+        "zh": "Ntfyx 手机回复"
+      },
+      "description": {
+        "en": "Ntfyx phone notifications, rich task reports and verified phone replies for DeepSeek Harness.",
+        "zh": "手机任务通知、富消息报告与本地验签的手机回复。"
+      },
+      "icon": "icon.svg",
+      "author": "Ntfyx",
+      "homepage": "https://github.com/KaylaONeal/dsh-plugin-ntfyx#readme",
+      "repository": {
+        "url": "https://github.com/KaylaONeal/dsh-plugin-ntfyx"
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1793168542,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/KaylaONeal/dsh-plugin-ntfyx",
+            "commit": "0928bace3ca36c63368b31d2137f14549e963eb4"
+          },
+          "engines": {
+            "dsh": "0.2.2-alpha.2"
+          }
+        }
+      ]
+    }
+  ]
+}
