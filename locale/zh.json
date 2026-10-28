@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Ntfyx 手机回复",
+    "description": "将任务通知和富消息报告发到手机，通过按钮或文字回答 Agent 问题，电脑本地验证回复。需要安装 Ntfyx CLI；受保护消息需手机配对。公开 Topic 消息对知道标识的人可见，不能授权执行。",
+    "detail": "docs/DETAIL.zh.md"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name": "dsh-plugin-ntfyx",
+  "version": "0.1.0",
+  "description": "Ntfyx phone notifications, rich task reports and verified phone replies for DeepSeek Harness.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Ntfyx",
+    "url": "https://ntfyx.me/"
+  },
+  "homepage": "https://github.com/KaylaONeal/dsh-plugin-ntfyx#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaylaONeal/dsh-plugin-ntfyx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KaylaONeal/dsh-plugin-ntfyx/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "ntfyx",
+    "mcp",
+    "notifications",
+    "phone-replies"
+  ],
+  "icon": "./icon.svg",
+  "exports": {
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "cordis.patch.yml",
+    "skills",
+    "locale",
+    "docs",
+    "icon.svg",
+    "README.zh.md",
+    "scripts/smoke.mjs"
+  ],
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": "0.2.2-alpha.2"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-mcp-client": "0.2.2-alpha.2",
+    "@deepseek-ai/dsh-skill-filesystem": "0.2.2-alpha.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "test": "node scripts/smoke.mjs"
+  }
+}

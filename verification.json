@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-28T06:17:50.345Z",
+  "platform": "linux-x64",
+  "node": "v24.14.0",
+  "dsh_version": "0.2.2-alpha.2",
+  "plugin": {
+    "name": "dsh-plugin-ntfyx",
+    "version": "0.1.0",
+    "tarball_sha256": "464bcbfdeaf58595953d793c037bf6b724557e1b186fb5e671670ad25f8d0894",
+    "files": [
+      "LICENSE",
+      "README.md",
+      "README.zh.md",
+      "cordis.patch.yml",
+      "docs/DETAIL.md",
+      "docs/DETAIL.zh.md",
+      "icon.svg",
+      "locale/en.json",
+      "locale/zh.json",
+      "package.json",
+      "scripts/smoke.mjs",
+      "skills/ntfyx/SKILL.md"
+    ]
+  },
+  "ntfyx_cli": {
+    "version": "0.6.0",
+    "build": "release",
+    "sha256": "6a8ac473c64ef78692313158da9b82cf4ce16884d87b1f145cdd83d6821c3192",
+    "public_manifest": "https://ntfyx.me/releases/0.6.0/manifest.json"
+  },
+  "checks": {
+    "packed_bundle_installed": true,
+    "official_profile_composition_and_loader": true,
+    "registered_mcp_tools": 35,
+    "local_message_validation": true,
+    "packaged_skill_discovery": true,
+    "phone_delivery_tested": false,
+    "native_approvals_tested": false,
+    "cli_forwarder_tested": false,
+    "model_called": false,
+    "notification_sent": false,
+    "production_credentials_used": false
+  },
+  "scope": "Official published DSH packages booted in an isolated profile, using the packed bundle and real unpaired Ntfyx MCP. No model, native UI or physical phone acceptance."
+}

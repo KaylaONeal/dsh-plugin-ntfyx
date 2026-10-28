@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Ntfyx phone replies",
+    "description": "Send task notifications and rich reports to your phone. Ask questions with buttons or text and receive locally verified replies. Requires the local Ntfyx CLI; protected messages need phone pairing. Public Topic messages are readable by anyone with the Topic ID and cannot authorize actions.",
+    "detail": "docs/DETAIL.md"
+  }
+}

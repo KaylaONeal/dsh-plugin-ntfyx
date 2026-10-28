@@ -1,0 +1,20 @@
+# Native DSH bundle. The local CLI owns encryption, pairing and reply verification.
+- insert:
+    - id: ntfyx-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: ntfyx
+        transport: stdio
+        command: ntfyx
+        args: [mcp]
+        # Ntfyx waits at most 45s per question/result call; leave transport overhead.
+        toolCallTimeoutMs: 65000
+        failOnStartupError: false
+    - id: ntfyx-skill-filesystem
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: ntfyx
+        includeDefaultRoots: false
+        watch: false
+        customSkillDirs:
+          - !!js process.getBuiltinModule('node:path').join(process.getBuiltinModule('node:path').dirname(process.getBuiltinModule('node:module').createRequire(baseUrl).resolve('dsh-plugin-ntfyx/package.json')), 'skills')
